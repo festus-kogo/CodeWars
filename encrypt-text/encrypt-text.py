@@ -10,11 +10,8 @@ def encrypt_text(s):
     letters = string.ascii_uppercase
     s = list(s)
     arr = []
-    print(f"{s}")
 
     for c in s:
-        print(f"found {c} at position {s.index(c)}")
-
         if c in letters:
             if s.index(c) == 25:
                 arr.append(s[0])
